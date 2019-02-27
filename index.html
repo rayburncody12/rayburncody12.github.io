@@ -1,0 +1,256 @@
+<!-- 
+Cody Rayburn Portfolio Site
+
+Single page w/ scrolling?
+Coding ****
+Design ***
+Marketing ***
+
+Technologies
+
+HTML5 - 
+	nav bar, multiple pages, site directory, integrated media
+CSS using SASS - uses variables, functions, and mixins = better organization
+	.sass file -> preprocessor: SassMeister(type sass into left and will compile into css on right)
+BootStrap - responsive, 
+	grid sytem, nav bar
+PHP - Contact
+	send email for contact purposes
+	Download resume PDF? click on nav bar link to dl
+
+Design Plan
+
+Mon, 27 Aug: Complete Design Plan
+Sun, 2 Sept: Deploy front page - Bluehost?
+Sun, 9 Sept: Complete Nav Bar pointing to various pages
+	Nav bar: Landing, Media, Download Resume, 
+	Pages: Landing page /index - nav bar, contact info, resume typed out and stylized!, preview gallery, please hire me
+				 Media /media - nav bar, contact info, pics, video?, integrated MEDIA
+Sun, 16 Sept: Open for discussion
+
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rayburn Development</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav></nav>
+	<div class="container">
+		<div id="navTabs">
+			<ul class="nav nav-tabs">
+				<li class="active" id="navBarTitles"><a href="#">Rayburn Development</a></li>
+				<li class="dropdown" id="navBarTitles">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">Experience <b class="caret"></b></a> 
+					<ul id="dropdown" class="dropdown-menu">
+						<li class="dropdown-header">University Experience</li>
+							<li><a href="parentOrderForm.htm">Pita Pit Order Form</a></li>
+							<li><a href="weddingIndex.html">Wedding Website/PWA</a></li>
+							<li><a href="mapsIndex.html">Google Maps API</a></li>
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Project Management</a></li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Work Experience</li>
+							<li><a href="#">Demolition Foreman</a></li>
+							<li><a href="#">Food Service Management</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+			<div class="row" id="firstRow">
+				<div id="detailsDiv" class="col-lg-6">
+					<h2 id="detailsH2">Details</h2>
+					<p>Name: <b>Cody Rayburn</b></p>
+					<p>Age: <b>23</b></p>
+					<p>Schooling: <b>Franklin University</b></p>
+					<p>Major: <b>Front-end Development</b></p>
+					<p>Minor: <b>Marketing</b></p>
+					<p>Graduation Date: <b>May 2019</b></p>
+				</div>
+				<div class="col-lg-6">
+					<img id="face" src="media/headshotSUmmer2018.png" height="185px" width="105px" class="img rounded">
+					<div class=""></div>
+				</div>
+			</div>
+			<div class="row" id="secondRow">
+				<div id="aboutDiv">
+					<h2 id="aboutH2">About me</h2>
+					<p id="aboutP">
+						I am currently about to break free into the real world(after graduation in May 2019) of Front-End Development. My journey through continued education has been grand, but I have learned a lot about myself and my career choice. Coding is important to me, as well as becoming a marketing professional.</p><p>I can design a front-end application from start to finish with a focus on what a client needs from a marketing perspective. I'm so close to being a Full-Stack Developer, but my knowledge does not run deep enough on the back-end yet. My focus has been on coding and marketing, but I can also utilize my competency in graphic design for many scenarios.</p><p>Being an important part of a team is a dream of mine. Also, I have worked with project management in an Agile environment. There is a subtantial amount of learning I need to do and I think any web design or marketing company would be a perfect fit for my Front-End Development career. 
+					</p>
+				</div>
+			</div>
+			<div class="row" id="thirdRow">
+				<div id="xpDiv" class="col-lg-6">
+					<h2 id="xpH2">Experiences</h2>
+					<ul>
+						<li><a href="#xpDesc1" class="btn" data-toggle="collapse">PitaPit Order Form<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc1" class="collapse">
+								Brainstormed with employer on need for an order form with a partnership. 
+							</div>
+						<li><a href="#xpDesc2" class="btn" data-toggle="collapse">Wedding Website/PWA<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc2" class="collapse">
+								Designed and fully implemented application for use by wedding attendees.
+							</div>
+						<li><a href="#xpDesc3" class="btn" data-toggle="collapse">Google Maps API<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc3" class="collapse">
+								Project using Bootstrap 4 and Google Maps API.
+							</div>
+						<li><a href="#xpDesc4" class="btn" data-toggle="collapse">Demolition Foreman<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc4" class="collapse">
+								Led demolition crew for Noah Building Contractors.
+							</div>
+						<li><a href="#xpDesc5" class="btn" data-toggle="collapse">Food Service Management<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc5" class="collapse">
+								Employed by Pita Pit and Gionino's Pizzeria.
+							</div>
+						<li><a href="#xpDesc6" class="btn" data-toggle="collapse">Project Management<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc6" class="collapse">
+								Worked with simulated project team.
+							</div>
+						<li><a href="#xpDesc7" class="btn" data-toggle="collapse">Design<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc7" class="collapse">
+								Utilized Adobe Photoshop for graphic design.
+							</div>
+					</ul>
+				</div>
+				<div id="skillsDiv" class="col-lg-6">
+					<h2 id="skillsH2">Skills</h2>
+					<ul>
+						<li><a href="#skillsDesc1" class="btn" data-toggle="collapse-in">Client-side languages/frameworks</a></li>
+							<div id="skillsDesc1" class="collapse-in">
+								<ul>
+									<li>HTML 5
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+									</li>
+									<li>CSS 3
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+									</li>
+									<li>SASS
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>JavaScript
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>Bootstrap
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>WordPress
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>jQuery
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>AJAX
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+
+								</ul>
+							</div>
+						<li><a href="#skillsDesc2" class="btn" data-toggle="collapse-in">Server-Side languages</a></li>
+							<div id="skillsDesc2" class="collapse-in">
+								<ul>
+									<li>PHP
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>SQL
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</li>
+								</ul>
+							</div>
+						<li><a href="#skillsDesc3" class="btn" data-toggle="collapse-in">Software</a></li>
+							<div id="skillsDesc3" class="collapse-in">
+								<ul>
+									<li>Microsoft Office
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+									</li>
+									<li>Sublime Text
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>Adobe Photoshop
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+									<li>JIRA
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+									</li>
+								</ul>
+							</div>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<footer>
+					<p><i>Pardon our dust: </i>Portfolio site under construction</p>
+				</footer>
+			</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity=sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity=sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maps</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+
+	<script type="text/javascript" src="scripts/mapJS.js"></script>
+</head>
+	<body>
+			<div id="map"></div>
+			<div class="container">
+				<h1 id="head1" class="display-2">Customize</h1>
+				<form action="maps.php" method="POST" enctype="multipart/form-data">
+					<div class="row">
+					<div class="col-lg-4" id="radioDiv">
+						<!-- <button id="drop" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Markers
+						</button> -->
+							<div id="radioLabel">
+								<h2>Marker Icon</h2>
+							</div>
+							<div class="form-check">
+								<label><input type="radio" id="default" class="form-check-input" name="radio" value="noIcon" checked="checked">Default</label>
+							</div>
+							<div class="form-check">
+								<label><input type="radio" id="flag" class="form-check-input" name="radio" value="flag">Flag</label>
+							</div>
+							<div class="form-check">
+								<label><input type="radio" id="bike" class="form-check-input" name="radio" value="bike">Bike</label>
+							</div>
+							<div class="form-check">
+								<label><input type="radio" id="mountain" class="form-check-input" name="radio" value="mountain">Mountain</label>
+							</div>
+							<!-- <div id="dropdownDiv" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					  		<a class="dropdown-item" href="#" onclick="changeMarker();"><img src="images/flag.PNG">Flag</a>
+					  		<a class="dropdown-item" href="#"><img src="images/bike.PNG">Bike</a>
+					  		<a class="dropdown-item" href="#"><img src="images/mission.PNG">Mountain</a>
+					  		<a class="dropdown-item" href="#"><img src=""></a>
+							</div> -->
+					</div>
+					<div class="col-lg-4">
+						<div id="windowDiv">
+							<h2>Marker Name</h2>
+							<input type="text" id="windowIn" name="windowInput" placeholder="ex. Bike Trail"><br />
+							<input type="button" id="setWindowBtn" name="setWindow" value="Set Marker Name">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div id="nameDiv" class="form-group">
+							<h2>File Name</h2>
+							<input id="name" type="text" name="name" required="required">
+						</div>
+						<div id="uploadDiv" class="form-group">
+							<input id="fileBtn" type="file" name="file">
+							<p class="help-block">Only png and svg allowed</p>
+						</div>
+						<div id="submitDiv" class="form-group">
+							<button id="submitBtn" class="btn btn-info" type="submit" name="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		
+		<footer><div>Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></footer>
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiMvvnIr7WaRw5IZS-kXhzZfbwCRh70Ok&callback=initMap">
+    </script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	</body>
+</html>

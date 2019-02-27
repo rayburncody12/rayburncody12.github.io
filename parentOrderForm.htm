@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="stylesPita.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	</head>
+	<header>
+		<title>Order Form</title>
+	</header>
+	<body>
+		<div id="container">
+			<div id="pitaLogo">
+				<figure>
+					<img src="" alt="Pita Pit">
+				</figure>
+			</div>
+			<div id="mediaLinks">
+				
+			</div>
+			<div id="navDiv">
+				<nav id="navBar">
+					<ul id="navUl">
+						<li>Home</li>
+						<li>Fairview Park</li>
+						<li>Strongsville</li>
+						<li>Ohio Station</li>
+						<li><a href="parentOrderForm.htm">The Goddard School</a></li>
+						<li>Hiring</li>
+						<li>Contact Us</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="orderH1">
+				<h1>ORDER FOR YOUR KIDS!</h1>
+			</div>
+			<div id="infoArticle">
+				<article>
+					<p>Enter the information for you and your child.</p>
+				</article>
+			</div>
+			<div id="formDiv">
+				<form name="orderForm" action="process.php" method="post">
+					<fieldset id="custInfo">
+						<label for="Name">* Name</label>
+						<input type="text" name="fName" required="required" placeholder="First">
+						<input type="text" name="lName" required="required" placeholder="Last"><br />
+						<label for="phone">* Phone</label>
+						<input type="text" name="phone" required="required" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"><br />
+						<label id ="childName" for="childName">Child's Name</label>
+						<input id="childNameInput" type="text" name="childName"><br />
+						<label for="date">* Date for order</label>
+						<input type="date" name="date" required="required">
+						<div id="requiredP">* Required</div>
+					</fieldset>
+					<div id="orderArticle">
+						<article>
+							<p>Place your order here.</p>
+						</article>
+					</div>
+					<fieldset id="pitaOrder">
+						<div id="breadSelectDiv">
+							<label for="bread">Bread Type</label>
+							<select id="breadSelect">
+								<option value="white">White</option>
+								<option value="wheat">Wheat</option>
+							</select><br />
+						</div>
+						<div id="proteinSelectDiv">
+							<label id="pitaLabel" for="pitaSelect">Pita Type</label>
+							<select id="pitaSelect">
+								<option value="turkey">Turkey</option>
+								<option value="ham">Ham</option>
+								<option value="chicken">Chicken</option>
+								<option value="hummus">Hummus</option>
+								<option value="cheese">Cheese/Veggie</option>
+							</select>
+						</div>
+						<div id="columnDiv">
+							<div class="checkDivs">
+								<label for="lettuce">Lettuce</label>
+								<input type="checkbox" name="lettuce" value="Lettuce" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="tomato">Tomato</label>
+								<input type="checkbox" name="tomato" value="Tomato" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="cucumber">Cucumber</label>
+								<input type="checkbox" name="cucumber" value="Cucumber" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="pickle">Pickle</label>
+								<input type="checkbox" name="pickle" value="pickle" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="greenPepper">Green Pepper</label>
+								<input type="checkbox" name="greenPepper" value="greenPepper" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="bananaPepper">Banana Pepper</label>
+								<input type="checkbox" name="bananaPepper" value="bananaPepper" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="blackOlives">Black Olives</label>
+								<input type="checkbox" name="blackOlives" value="blackOlives" class="checkboxes">
+							</div>
+						</div>
+					</fieldset>
+					<div id="saucyArticle">
+						<article>
+							<p>Add extra flavor with some sauce.</p>
+						</article>
+					</div>
+					<fieldset id="sauceField">
+						<div id="columnDiv">
+							<div class="checkDivs">
+								<label for="ancho">Ancho Chipolte</label>
+								<input type="checkbox" name="ancho" value="Ancho" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="balsamic">Balsamic Vinagrette</label>
+								<input type="checkbox" name="balsamic" value="Balsamic" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="boom">Boom Boom</label>
+								<input type="checkbox" name="boom" value="Boom" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="bbq">BBQ</label>
+								<input type="checkbox" name="bbq" value="BBQ" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="buffalo">Buffalo</label>
+								<input type="checkbox" name="buffalo" value="Buffalo" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="hotSauce">Hot Sauce</label>
+								<input type="checkbox" name="hotSauce" value="HotSauce" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="jalapenoRanch">Jalapeno Ranch</label>
+								<input type="checkbox" name="jalapenoRanch" value="JalapenoRanch" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="mayo">Light Mayo</label>
+								<input type="checkbox" name="mayo" value="Mayo" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="ranch">Ranch</label>
+								<input type="checkbox" name="ranch" value="Ranch" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="secretSauce">Secret Sauce</label>
+								<input type="checkbox" name="secretSauce" value="SecretSauce" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="sourCream">Sour Cream</label>
+								<input type="checkbox" name="sourCream" value="sourCream" class="checkboxes">
+							</div>
+							<div class="checkDivs">
+								<label for="sriracha">Sriracha</label>
+								<input type="checkbox" name="sriracha" value="Sriracha" class="checkboxes">
+							</div>
+						</div>
+						<div class="checkDivs">
+							<label for="teriyaki">Teriyaki</label>
+							<input type="checkbox" name="teriyaki" value="Teriyaki" class="checkboxes">
+						</div>
+						<div class="checkDivs">
+							<label for="mustard">Yellow Mustard</label>
+							<input type="checkbox" name="yellowMustard" value="YellowMustard" class="checkboxes">
+						</div>
+					</fieldset>
+					<div id="cheeseArticle">
+						<article>
+							<p>Any cheese?</p>
+						</article>
+					</div>
+					<fieldset id="cheeseField">
+						<div id="columnDiv">
+							<div class="checkDivs">
+								<label for="cheddar">Cheddar</label>
+								<input type="radio" name="cheeseRadio" value="Cheddar">
+							</div>
+							<div class="checkDivs">
+								<label for="feta">Feta</label>
+								<input type="radio" name="cheeseRadio" value="Feta">
+							</div>
+							<div class="checkDivs">
+								<label for="parm">Parmesan</label>
+								<input type="radio" name="cheeseRadio" value="Parm">
+							</div>
+							<div class="checkDivs">
+								<label for="pepperJack">Pepper Jack</label>
+								<input type="radio" name="cheeseRadio" value="PepperJack">
+							</div>
+							<div class="checkDivs">
+								<label for="provolone">Provolone</label>
+								<input type="radio" name="cheeseRadio" value="Provolone">
+							</div>
+							<div class="checkDivs">
+								<label for="noCheese">No Cheese</label>
+								<input type="radio" name="cheeseRadio" value="noCheese">
+							</div>
+						</div>
+					</fieldset>
+					<div id="commentArticle">
+						<article>
+							<p>Insert comments here. (Sauce or toppings on side, allergy information, etc.)</p>
+						</article>
+					</div>
+					<fieldset id="commentField">
+						<div id="commentDiv">
+							<textarea></textarea>
+						</div>
+					</fieldset>
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

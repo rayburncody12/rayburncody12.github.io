@@ -1,0 +1,390 @@
+/*The Rayburn Wedding Stylesheet*/
+
+* {box-sizing:border-box}
+
+body {
+	font-family: 'Petit Formal Script', cursive;
+	display: flex;
+	background-color: #fff4f2;
+	color: #302e2e;
+}
+
+body, html, #container {
+	height: 100%;
+}
+
+::-moz-selection {
+	color: #2c97a0;
+	background: #FFB6C1;
+}
+
+::selection {
+	color: #2c97a0;
+	background: #FFB6C1;
+}
+
+#container {
+	width: 100%;
+}
+
+#main img {
+	max-height: 900px;
+	width: 100%;
+	border-radius: 6px;
+}
+
+/*nav buttons*/
+
+#navContainer {
+	position: fixed;
+	top: 50px;
+	left: -50px;
+	z-index: 1;
+}
+
+#buttonNav ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: none;
+}
+
+.button {
+	display: block;
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 60px;
+	margin: 25px 25px;
+	max-width: 450px;
+}
+
+.button a {
+	background-color: #2c97a0;/*teal hex*/
+	border: 2px solid #FFB6C1;/*blush hex*/
+	border-radius: 4px;
+	padding: 5px 5px;
+	transition: color, 0.5s;
+}
+
+.button a:link {
+	text-decoration: none;
+	color: white;
+}
+
+.button a:visited {
+	color: white;
+}
+
+.button a:hover {
+	background-color: #1f6e75;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+
+/*back to top button*/
+
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	background-image:url(arrowUp.png);
+	background-size: 100%;
+	background-color: #2c97a0;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 20px;
+}
+
+/*background container*/
+
+#innerContainer {
+	width: 60%;
+	position: relative;
+	top: 0px;
+	padding-top: 20px;
+	background-color: #fff4f2;
+	margin: auto;
+	z-index: -1;
+}
+
+#rsvpDiv {
+	text-align: center;
+}
+
+#click {
+	text-align: center;
+	font: bold 40px 'Amatic SC';
+}
+
+#rsvp {
+	border-radius: 6px;
+	background-color: #2c97a0;
+	border: 2px solid #FFB6C1;
+	color: #FFFFFF;
+	text-align: center;
+	font: 60px 'Amatic SC';
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+#rsvp span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+#rsvp span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#rsvp:hover span {
+	padding-right: 25px;
+}
+
+#rsvp:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+#registryDiv {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#regP {
+	font-size: 48px;
+	font-weight: bold;
+	padding-top: 50px;
+}
+
+#regP2 {
+	font: 40px 'Amatic SC', sans-serif;
+	color: #2c97a0;
+	font-weight: bold;
+}
+
+#registryDiv a {
+	padding: 10px;
+	text-decoration: none;
+}
+
+#registryDiv img:hover {
+	box-shadow: 8px 8px 11px #594a44;
+	transition: color, 0.5s;
+}
+
+/*our story container*/
+
+#aboutContainer {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#aboutUs {
+	font: bold 48px 'Petit Formal Script';
+	text-align: center;
+}
+
+/*use classes; yes cleaner code*/
+
+.indieF {
+	font: 26px 'Indie Flower';
+}
+
+.homeF {
+	font: 32px 'Homemade Apple';
+}
+
+.freckleF {
+	font: 32px 'Freckle Face';
+}
+
+#brLeft {
+	text-align: left;
+}
+
+#yes {
+	font: 40px 'Dancing Script';
+}
+
+#directionsDiv {
+	position: relative;
+	top: 25%;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+#directP {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#directionsDiv iframe {
+	frameborder: 0;
+	border: 0;
+}
+
+#outP {
+	font-size: 40px;
+	font-family: 'Amatic SC', sans-serif;
+	font-weight: bold;
+	color: #2c97a0;
+}
+
+.googleMaps {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+.googleMaps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#contactDiv {
+	position: relative;
+	top: 20%;
+	text-align: center;
+}
+
+#contactP {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#contactP1, #contactP2 {
+	font-size: 40px;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+#contactP3 {
+	font-size: 23px;
+	font-family: 'Indie Flower';
+}
+
+
+@media screen and (max-width: 750px) {
+    iframe {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+.mySlides {
+	display: none;
+}
+
+#galleryDiv {
+	text-align: center;
+	max-width: 100%;
+	min-width: 250px;
+	position: relative;
+	margin: auto;
+	height: auto;
+	overflow: hidden;
+	visibility: visible !important; 
+}
+
+#galleryP {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.mySlides img {
+	height: 100%;
+	width: 100%;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	margin-top: -22px;
+  	padding: 16px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 18px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+}
+
+.prev {
+	position: absolute;
+	left: 0;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.numText {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor:pointer;
+  	height: 13px;
+  	width: 13px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+footer {
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 40px;
+}
