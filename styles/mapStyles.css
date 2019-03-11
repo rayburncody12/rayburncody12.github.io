@@ -1,0 +1,77 @@
+/*	
+Maps styles.css 
+*/
+
+html, body {
+	font-family: 'Quicksand', 'sans-serif';
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.container {
+	width: 100%
+}
+
+#map {
+	height: 65vh; /*matches height of viewport*/
+	width: 100%;
+	background-color: grey;
+}
+
+#head1 {
+	color: #551a8b;/*purple*/
+	padding: 25px 25px 0px;
+}
+
+/* Radio Column */
+
+#radioDiv input {
+	padding-right: 15px;
+}
+
+/* Window Column */
+
+#windowIn {
+	
+}
+
+#setWindowBtn {
+	margin-top: 15px;
+}
+
+
+/* Upload Column */
+
+#uploadDiv {
+	float: left;
+}
+
+#uploadDiv p {
+	padding-left: 0px;
+}
+
+#submitDiv {
+	margin-left: 0px;
+}
+
+#fileBtn {
+	margin-left: 10px;
+}
+
+#submitBtn {
+	background: #508b1a;
+	color: white; 
+	margin-left: 25px;
+}
+
+#submitBtn:hover {
+	background: #406f14;/*green*/
+}
+
+
+
+footer {
+	margin-top: 200px;
+	margin-left: 50px;
+}

@@ -1,0 +1,209 @@
+/*Stylesheet for parentOrderForm.htm*/
+
+body {
+	font-family: 'Open Sans', Verdana, sans-serif;
+	background-image:url(media/cilantro.jpg);
+	background-repeat: repeat-x;
+	background-size: 1920px 1080px;
+	background-attachment: fixed;
+	display: flex;
+	height: 100%;
+}
+
+#container {
+	margin: auto;
+	width: 60%;
+	background-color: white;
+}
+
+#columnDiv {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+/*nav bar*/
+
+#navDiv {
+	text-align: center;
+}
+
+#navBar {
+	display: block;
+}
+
+#navUl {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navUl li {
+	display: inline;
+}
+
+#navUl a {
+	display: block;
+
+}
+
+/*left side articles*/
+
+#infoArticle {
+	float: left;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+#orderArticle {
+	float: left;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+#saucyArticle {
+	float: left;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+#cheeseArticle {
+	float: left;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+#paymentArticle {
+	float: left;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+#commentArticle {
+	float: left;
+	width: 200px;
+	margin-left: 50px;
+	margin-right: 30px;
+}
+
+/*order form*/
+
+#orderH1 {
+	text-align: center;
+}
+
+fieldset {
+	margin: 25px;
+}
+
+label {
+   clear: left;
+   display: block;
+   font-size: 16px;
+   float: left;
+   padding-left: 5px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   width: 40%;
+}
+
+input {
+	margin: 15px 10px;
+	display: inline-block;
+	box-shadow: 1px 1px 1px #D3D3D3;
+}
+
+#requiredP {
+	font-size: 12px;
+}
+
+.checkboxes {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+
+.checkboxes:active, .checkboxes:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkboxes:checked {
+	background-color: #E9ECEE;
+	border: 1px solid #ABD8C0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), 
+		inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99A1A7;
+}
+
+.checkboxes:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99A1A7;
+}
+
+/*specific labels and inputs*/
+
+#pitaLabel {
+	margin: auto;
+}
+
+#pitaSelect {
+	margin: auto;
+}
+
+#breadSelectDiv select {
+	border: 0;
+	color: white;
+	background:  #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2px 10px;
+	width: 250px;
+	-moz-border-radius: 9px 9px 9px 9px;
+	-webkit-border-radius: 9px 9px 9px 9px;
+	box-shadow: 1px 1px 11px #D3D3D3;
+	margin: 10px 0px;
+}
+
+#proteinSelectDiv select {
+	border: 0;
+	color: white;
+	background:  #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2px 10px;
+	width: 250px;
+	-moz-border-radius: 9px 9px 9px 9px;
+	-webkit-border-radius: 9px 9px 9px 9px;
+	box-shadow: 1px 1px 11px #D3D3D3;
+	margin: 10px 0px;
+}
+
+[type="radio"] {
+	box-shadow: none;
+}
+
+#commentDiv textarea {
+	resize: vertical; /*prevents horizontal resizing*/
+	width: 100%;
+	text-align: left;
+	margin-left: 0;
+	font-family: inherit;
+  font-size: inherit;
+}
+
+
+

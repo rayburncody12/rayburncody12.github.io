@@ -41,33 +41,28 @@ Sun, 16 Sept: Open for discussion
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<nav></nav>
 	<div class="container">
-		<div id="navTabs">
-			<ul class="nav nav-tabs">
-				<li class="active" id="navBarTitles"><a href="#">Rayburn Development</a></li>
-				<li class="dropdown" id="navBarTitles">
-					<a href="#" data-toggle="dropdown" class="dropdown-toggle">Experience <b class="caret"></b></a> 
-					<ul id="dropdown" class="dropdown-menu">
-						<li class="dropdown-header">University Experience</li>
-							<li><a href="parentOrderForm.htm">Pita Pit Order Form</a></li>
-							<li><a href="weddingIndex.html">Wedding Website/PWA</a></li>
-							<li><a href="mapsIndex.html">Google Maps API</a></li>
-							<li><a href="#">Design</a></li>
-							<li><a href="#">Project Management</a></li>
-						<li class="divider"></li>
-						<li class="dropdown-header">Work Experience</li>
-							<li><a href="#">Demolition Foreman</a></li>
-							<li><a href="#">Food Service Management</a></li>
-					</ul>
-				</li>
-			</ul>
+		<div class="row" id="navRow">
+			<div class="col-lg-4">
+				<div id="navLinks">
+					<a href="#xpDiv">Experiences</a>
+					<a href="mediaPage.html">Media</a>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div id="logo">
+					<img src="media/RayburnRetro.png" alt="Rayburn Development">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<h5>Contact: rayburn.cody12@gmail.com</h5>
+			</div>
 		</div>
 			<div class="row" id="firstRow">
-				<div id="detailsDiv" class="col-lg-6">
+				<div id="detailsDiv" class="col-lg-4">
 					<h2 id="detailsH2">Details</h2>
 					<p>Name: <b>Cody Rayburn</b></p>
 					<p>Age: <b>23</b></p>
@@ -76,9 +71,24 @@ Sun, 16 Sept: Open for discussion
 					<p>Minor: <b>Marketing</b></p>
 					<p>Graduation Date: <b>May 2019</b></p>
 				</div>
-				<div class="col-lg-6">
-					<img id="face" src="media/headshotSummer2018.png" height="185px" width="105px" class="img rounded">
-					<div class=""></div>
+				<div class="col-lg-4" id="faceDiv">
+					<img id="face" src="media/headshotWedding.jpg" class="img rounded">
+				</div>
+				<div class="col-lg-4" id="carouselDiv">
+					<h2 id="carouselH3">Media Snapshot</h2>
+					<div class="carousel slide" data-ride="carousel">
+						<div id="cInner" class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="media/mainBridge.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="media/UTVlogoBrownFinal.png" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="media/promotion.jpeg" alt="Third slide">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="row" id="secondRow">
@@ -91,35 +101,40 @@ Sun, 16 Sept: Open for discussion
 			</div>
 			<div class="row" id="thirdRow">
 				<div id="xpDiv" class="col-lg-6">
-					<h2 id="xpH2">Experiences</h2>
+					<h3 id="xpH3">University Experiences</h3>
+					<button class="btn" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="true" aria-controls="xpDesc1 xpDesc2 xpDesc3 xpDesc4">Expand all</button>
 					<ul>
-						<li><a href="#xpDesc1" class="btn" data-toggle="collapse">PitaPit Order Form<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+						<li><a href="#xpDesc1" class="btn" data-toggle="collapse">Wedding Website/PWA<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a><a href="weddingIndex.html">Link</a></li>
 							<div id="xpDesc1" class="collapse">
-								Brainstormed with employer on need for an order form with a partnership. 
-							</div>
-						<li><a href="#xpDesc2" class="btn" data-toggle="collapse">Wedding Website/PWA<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-							<div id="xpDesc2" class="collapse">
 								Designed and fully implemented application for use by wedding attendees.
 							</div>
-						<li><a href="#xpDesc3" class="btn" data-toggle="collapse">Google Maps API<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-							<div id="xpDesc3" class="collapse">
+						<li><a href="#xpDesc2" class="btn" data-toggle="collapse">Google Maps API<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a><a href="mapsIndex.html">Link</a></li>
+							<div id="xpDesc2" class="collapse">
 								Project using Bootstrap 4 and Google Maps API.
 							</div>
-						<li><a href="#xpDesc4" class="btn" data-toggle="collapse">Demolition Foreman<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-							<div id="xpDesc4" class="collapse">
-								Led demolition crew for Noah Building Contractors.
-							</div>
-						<li><a href="#xpDesc5" class="btn" data-toggle="collapse">Food Service Management<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-							<div id="xpDesc5" class="collapse">
-								Employed by Pita Pit and Gionino's Pizzeria.
-							</div>
-						<li><a href="#xpDesc6" class="btn" data-toggle="collapse">Project Management<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-							<div id="xpDesc6" class="collapse">
+						<li><a href="#xpDesc3" class="btn" data-toggle="collapse">Project Management<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc3" class="collapse">
 								Worked with simulated project team.
 							</div>
-						<li><a href="#xpDesc7" class="btn" data-toggle="collapse">Design<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
-							<div id="xpDesc7" class="collapse">
+						<li><a href="#xpDesc4" class="btn" data-toggle="collapse">Design<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc4" class="collapse">
 								Utilized Adobe Photoshop for graphic design.
+							</div>
+					</ul>
+					<h3>Work Experiences</h3>
+					<button class="btn" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="true" aria-controls="xpDesc5 xpDesc6 xpDesc7">Expand all</button>
+					<ul>
+						<li><a href="#xpDesc5" class="btn" data-toggle="collapse">PitaPit Order Form<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a><a href="parentOrderForm.htm">Link</a></li>
+							<div id="xpDesc5" class="collapse">
+								Brainstormed with employer on need for an order form with a partnership. 
+							</div>
+						<li><a href="#xpDesc6" class="btn" data-toggle="collapse">Demolition Foreman<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc6" class="collapse">
+								Led demolition crew for Noah Building Contractors.
+							</div>
+						<li><a href="#xpDesc7" class="btn" data-toggle="collapse">Food Service Management<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+							<div id="xpDesc7" class="collapse">
+								Employed by Pita Pit and Gionino's Pizzeria.
 							</div>
 					</ul>
 				</div>
@@ -147,7 +162,7 @@ Sun, 16 Sept: Open for discussion
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star"></span>
 										<span class="fa fa-star"></span>
 									</li>
 									<li>JavaScript
@@ -185,7 +200,6 @@ Sun, 16 Sept: Open for discussion
 										<span class="fa fa-star"></span>
 										<span class="fa fa-star"></span>
 									</li>
-
 								</ul>
 							</div>
 						<li><a href="#skillsDesc2" class="btn" data-toggle="collapse-in">Server-Side languages</a></li>
@@ -243,9 +257,10 @@ Sun, 16 Sept: Open for discussion
 					</ul>
 				</div>
 			</div>
-			<div>
+
+			<div id="footer">
 				<footer>
-					<p><i>Pardon our dust: </i>Portfolio site under construction</p>
+					<div id="rayburnDate"><p>Cody Rayburn, 2019</p></div><div id="pardon"><p><i>Pardon our dust: </i>Portfolio site under construction</p></div>
 				</footer>
 			</div>
 	</div>

@@ -1,77 +1,189 @@
-/*	
-Maps styles.css 
+/* styles/styles.css
+
+Sass syntax, pre-compiled functions then syntax
+
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+$purple: #800080; 
+$teal: #008080; 
+$vanilla: #f3e5ab;
+$box-shadow-btm-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+h1.title {
+  font: $title-font;
+  color: $;
+}
+
+div.container {
+  color: $primary;
+  background: $secondary;
+  width: 100%;
+  box-shadow: $box-shadow-btm-only;
+}
 */
 
-html, body {
-	font-family: 'Quicksand', 'sans-serif';
-	margin: 0px;
-	padding: 0px;
+/* compiled css using SassMeister */
+
+body {
+	font-family: "Quicksand", sans-serif;
+}
+
+#navTabs {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	margin: auto;
+}
+
+#navLinks {
+  font: normal 24px/1.5 "Quicksand", sans-serif;
+  color: #800080;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  vertical-align: baseline;
+}
+
+#navLinks a {
+	color: #800080;
+	text-decoration: none;
+}
+
+#navLinks a:hover {
+	color: #008080;
+	text-decoration: none;
+}
+
+div.container {
+  color: #008080;
+  background: #F9F2D5;
+  width: 100%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+#firstRow {
+	margin-top: 20px;
+}
+
+#nameDiv {
+  margin: 0 auto;
+  font: normal 24px/1.5 "Quicksand", sans-serif;
+}
+
+#detailsDiv.p {
+	padding-left: 50px;
+	font: normal 22px/1.5 "Quicksand", sans-serif;
+}
+
+#detailsH2 {
+	padding-left: 15px;
+}
+
+#face {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 100%;
 }
 
-.container {
-	width: 100%
+
+
+#carouselDiv {
+	height: 500px;
 }
 
-#map {
-	height: 65vh; /*matches height of viewport*/
-	width: 100%;
-	background-color: grey;
+#cInner.img {
+	height: 100%;
+	vertical-align: middle;
 }
 
-#head1 {
-	color: #551a8b;/*purple*/
-	padding: 25px 25px 0px;
-}
-
-/* Radio Column */
-
-#radioDiv input {
-	padding-right: 15px;
-}
-
-/* Window Column */
-
-#windowIn {
-	
-}
-
-#setWindowBtn {
+#secondRow {
+	background-color: #FFFFFF;
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-
-/* Upload Column */
-
-#uploadDiv {
-	float: left;
+#aboutDiv {
+  margin: 30px;
+  padding: 5px;
 }
 
-#uploadDiv p {
-	padding-left: 0px;
+#aboutH2 {
+  color: #008080;
+  padding-left: 15px;
 }
 
-#submitDiv {
-	margin-left: 0px;
+#aboutP {
+	font: normal 18px/1.5 "Quicksand", sans-serif;
 }
 
-#fileBtn {
-	margin-left: 10px;
+#xpH2 {
+  color: #008080;
+  padding-left: 15px;
 }
 
-#submitBtn {
-	background: #508b1a;
-	color: white; 
-	margin-left: 25px;
+#xpDiv ul li {
+	list-style-type: none;
 }
 
-#submitBtn:hover {
-	background: #406f14;/*green*/
+#xpDiv a {
+	color: #800080;
+	font-weight: bold;
 }
 
+#xpDiv a:hover {
+	color: #008080;
+	font-weight: bold;
+}
 
+#xpDesc1, #xpDesc2, #xpDesc3, #xpDesc4, #xpDesc5, #xpDesc6, #xpDesc7 {
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
 
-footer {
-	margin-top: 200px;
-	margin-left: 50px;
+#skillsDiv ul li{
+	list-style-type: none;
+}
+
+#skillsDiv a {
+	color: #800080;
+	font-weight: bold;
+}
+
+#skillsDiv a:hover {
+	color: #008080;
+	font-weight: bold;
+}
+
+#skillsH2 {
+  color: #008080;
+  padding-left: 15px;
+}
+
+.fa {
+	color: #008080;
+}
+
+.checked {
+	color: #800080;
+}
+
+#footer {
+	display: block;
+}
+
+#rayburnDate {
+	text-align: left;
+}
+
+#pardon {
+	text-align: right;
 }

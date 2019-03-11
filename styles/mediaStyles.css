@@ -1,0 +1,65 @@
+/*styles/mediaStyles.css
+
+
+*/
+
+body {
+	font-family: "Quicksand", sans-serif;
+}
+
+#navTabs {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	margin: auto;
+}
+
+#navLinks {
+  font: normal 24px/1.5 "Quicksand", sans-serif;
+  color: #800080;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  vertical-align: baseline;
+}
+
+#navLinks a {
+	color: #800080;
+	text-decoration: none;
+}
+
+#navLinks a:hover {
+	color: #008080;
+	text-decoration: none;
+}
+
+div.container {
+  color: #008080;
+  background: #F9F2D5;
+  width: 100%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.card {
+	width: 18rem;
+	margin: auto;
+	margin-top: 5px;
+	padding: 15px;
+	background-color: white;
+}
+
+#footer {
+	display: block;
+}
+
+#rayburnDate {
+	text-align: left;
+}
+
+#pardon {
+	text-align: right;
+}
